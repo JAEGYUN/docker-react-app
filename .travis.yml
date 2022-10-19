@@ -11,3 +11,6 @@ before_install:
 
 script: 
   - docker run -e CI=true JAEGYUN/docker-react-app npm run test -- --coverage
+
+after_script: 
+  - echo "test success"
